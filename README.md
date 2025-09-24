@@ -54,3 +54,7 @@ Deploy on platforms like Render, Heroku, or AWS Lambda for live updates from you
 **Google Slides API** for presentation updates
 
 **CORS Middleware** for secure frontend integration
+
+## Pre-Requisites 
+- **Google Slides** must have the respective text boxes marked with Alt Text with respective description.
+- Enable **Google Slides API** on the Google **Cloud Developer Console**.
