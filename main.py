@@ -24,10 +24,12 @@ if not PRESENTATION_ID:
 slides_service = build('slides', 'v1', credentials=creds)
 app = FastAPI()
 
+origins = ["https://json-gen.onrender.com"]
+
 # Allow CORS for frontend domain (adjust to your deployed frontend URL)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change "*" to your frontend URL in production
+    allow_origins=origins,  # Change "*" to your frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
